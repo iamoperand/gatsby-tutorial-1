@@ -20,9 +20,9 @@ class Counter extends React.Component {
             <div>
                 <h1>Counter</h1>
                 <p>
-                    <button onClick={this.decrement}> - </button>
+                    <button onClick={this.decrement.bind(this)}> - </button>
                         { this.state.count }
-                    <button onClick={this.increment}> + </button>
+                    <button onClick={this.increment.bind(this)}> + </button>
                 </p>
             </div>
         )
