@@ -4,16 +4,18 @@ import Link from 'gatsby-link'
 class Counter extends React.Component {
     constructor() {
         super()
-        this.state = { count: 0 }
-        this.increment = this.increment.bind(this);
-        this.decrement = this.decrement.bind(this);
+
     }
 
-    increment() {
+    state = { count: 0 }
+    increment = this.increment.bind(this);
+    decrement = this.decrement.bind(this);
+
+    increment () {
         this.setState({count: this.state.count + 1});
     }
 
-    decrement() {
+    decrement () {
         this.setState({count: this.state.count - 1});
     }
 
